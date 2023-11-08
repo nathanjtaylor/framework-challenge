@@ -4,17 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">  </head>
   <body>
-    <h1>Heading</h1>
     <script src="index.js"></script>
   </body>
 </html>
 
 
 <header>
-  <h1>Mitten Raised</h1>
-  
+  <h1>Sweet Catering</h1>
 </header>
+
+<main>
+  <img src="cookies.jpg" alt="Mitten Raised's Storefront">
+
+
+  <h2>Order Form</h2>
+  <form>
+    <label><strong>Place your Order</strong></label>
+    <div> 
+      <label><small>For orders containing 6 or more items you must order 24 hours in advance.</small></label>
+    </div>
+   
+    <label for="item-choice">Item</label>
+    <select name="item-choice" id="item-choice" required>
+      <option value="Honey-Glaze Donut">Honey-Glaze Donut</option>
+      <option value="Chocolate Blondie">Chocolate Blondie</option>
+      <option value="Coffee Cake">Coffee Cake</option>
+      <option value="Pink Frosted Sprinkle Donut">Pink Frosted Sprinkle Donut</option>
+    </select>
+
+    <label for="quantity">Quantity</label> <input type="number" name="quantity" id="quantity" min="1" step="1" required>
+
+    <label for="date">Date </label><input type="date" name="date" id="date" required>
+    <label for="time">Time </label><input type="time" name="time" id="time" required>
+
+    <label for="email">Email </label><input type="email" name="email" id="email" required>
+    <label for="phone-number">Phone Number </label> <input type="tel" name="phone-number" id="phone-number" required>
+
+    <label for="add-info">Add Pickup Info </label><textarea name="add-info" id="add-info" cols="30" rows="10"></textarea>
+
+
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+</main>
+
+
+
